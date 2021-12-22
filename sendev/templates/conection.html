@@ -1,0 +1,12 @@
+{% extends 'index.html'%}
+{% block content%}
+ <div class="container">
+    
+        <form class="form col-12" method="post" action="" >
+        ajouter utilisateur
+             {% csrf_token %}
+             {{form.as_p}}
+        <button  style="text-align: left;color: #074aad; " type="submit" class="btn mx-auto">Se connecter</button>
+
+        </form>
+{% endblock%}

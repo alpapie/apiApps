@@ -1,0 +1,17 @@
+{% extends "index.html"%}
+{% block content %}
+
+<fieldset>
+ <ul class="list-group">
+    <li class="liste-group-item">	<img src="/media/{{contact.icon}}"  width="500"></li>
+    <li class="liste-group-item">{{contact.prenom}}</li>
+    <li class="liste-group-item">{{contact.nom}}</li>
+    <li class="liste-group-item">{{contact.age}}</li>
+    <li class="liste-group-item">{{contact.telephone}}</li>
+    <li class="liste-group-item">{{contact.email}}</li>
+    <li class="liste-group-item">{{contact.location}}</li>
+    </ul>
+   
+
+</fieldset>
+{% endblock%}
